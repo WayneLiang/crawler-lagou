@@ -1,6 +1,6 @@
  ![image](https://github.com/WayneLiang/crawler-lagou/blob/master/public/images/node_city.jpeg)
- ![image](https://github.com/WayneLiang/crawler-lagou/blob/master/public/images/node_city.jpeg)
- ![image](https://github.com/WayneLiang/crawler-lagou/blob/master/public/images/node_city.jpeg)
+ ![image](https://github.com/WayneLiang/crawler-lagou/blob/master/public/images/node_salary.jpeg)
+ ![image](https://github.com/WayneLiang/crawler-lagou/blob/master/public/images/node_workyear.jpeg)
  
 
 ## 所需环境
