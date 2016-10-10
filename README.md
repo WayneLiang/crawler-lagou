@@ -10,7 +10,7 @@
 ## 使用步骤
 ### 1. Clone
 ```
-git clone git@github.com:WayneLiang/crawer-lagou.git
+git clone git@github.com:WayneLiang/crawler-lagou.git
 ```
 ### 2. 还原第三方包
 ```

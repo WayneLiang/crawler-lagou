@@ -1,0 +1,155 @@
+#sidebar {
+    width: 230px;
+    position: absolute;
+    z-index: 101;
+}
+#sidebar .mainNavs {
+    background: #fafafa;
+}
+#sidebar .menu_main {
+    width: 206px;
+    padding: 6px 12px;
+    border: 2px solid #fafafa;
+    border-right: none;
+    overflow: hidden;
+    position: relative;
+}
+#sidebar .menu_main h2 {
+    font-size: 18px;
+    padding-left: 8px;
+    font-weight: 500;}
+h2 {
+    margin: 10px 0;
+}
+#sidebar .menu_main h2 span {
+    width: 13px;
+    height: 14px;
+    background: url(http://www.lagou.com/images/arr.png) 0 0 no-repeat;
+    float: right;
+    margin-top: 3px;
+}
+#sidebar .menu_main a {
+    float: left;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    padding: 0 8px;
+}
+a {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;}
+#sidebar .menu_sub {
+    width: 540px;
+    padding: 15px 30px 5px 30px;
+    position: absolute;
+    top:0;
+
+    left: 230px;
+    z-index: 101;
+    border: 2px solid #c9cbce;
+    background: #fff;
+}
+.dn {
+    display: none;
+}
+#sidebar .menu_sub dl {
+    margin: 0 0 20px;
+}
+#sidebar .menu_sub dt {
+    width: 70px;
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+}
+#sidebar .menu_sub dd {
+    margin-left: 100px;
+    overflow: hidden;
+}
+#sidebar .menu_sub dt a {
+    padding: 0;
+    color: #333;
+    line-height: 28px;
+    text-decoration: underline;
+}
+#sidebar .menu_sub dd a.curr {
+    color: #00b38a;
+    background-position: -29px center !important;
+}
+#sidebar .menu_sub dd a {
+    white-space: nowrap;
+    padding: 0 10px;
+    background: url(http://www.lagou.com/images/arr.png) -29px center no-repeat;
+    color: #777;
+    line-height: 28px;
+    margin-left: -1px;
+}
+#container {
+    width: 1024px;
+    margin: 35px auto 0;
+    padding-bottom: 150px;
+}
+#sidebar {
+    width: 230px;
+    position: absolute;
+    z-index: 101;
+}
+#sidebar .subscribe {
+    display: block;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    background: #fafafa;
+    padding: 0 0px 0 20px;
+    margin-top: 12px;
+    border-bottom: 2px solid #00b38a;
+}
+#sidebar .subscribe a {
+    display: block;
+    float: left;
+    margin-bottom: -32px;
+    width: 210px;
+}
+#sidebar .subscribe a span {
+    float: left;
+    margin-left: 20px;
+}
+#sidebar .subscribe i#n_rss {
+    display: block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 14px;
+    width: 21px;
+    background: url(http://www.lagou.com/images/arr_btn.png) 0px -19px no-repeat;
+}
+#sidebar .menu_main h2 i {
+    background: url(http://www.lagou.com/images/newLabel.png) 0 0 no-repeat;
+    position: absolute;
+    width: 37px;
+    height: 17px;
+    left: 60px;
+    top: 17px;
+}
+
+
+
+#sidebar .current .menu_main{
+    background:#fff;
+    border:2px solid #c9cbce;
+    border-right:none;
+    z-index:102;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

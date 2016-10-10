@@ -1,0 +1,38 @@
+body, div, ul, li, img {
+    margin: 0;
+    padding: 0;
+    font: 14px/22px Arial,"Hiragino Sans GB","΢���ź�","����";
+    list-style: none;
+}
+.active {
+    color: #00b38a;
+}
+.breadcrumb {
+    font-size: 18px;
+    padding:8px 15px;
+    margin-bottom:20px;
+    list-style:none;
+    background-color:#f5f5f5;
+    border-radius:4px;
+    text-align:center;
+}
+.breadcrumb>li {
+    display:inline-block
+}
+.breadcrumb>li+li:before {
+    padding:0 5px;
+    color:#ccc;
+    content:"/\00a0"
+}
+.breadcrumb>.active {
+    color:#777
+}
+.echarts{
+    position:relative;
+    margin-top:50px;
+    margin-left:300px;
+    /*width:10px;*/
+    /*height:10px;*/
+    /*border:1px solid red;*/
+    /*z-index:100;*/
+}

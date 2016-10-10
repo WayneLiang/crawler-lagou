@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/lagou/header.css"/>
+    <link rel="stylesheet" href="/stylesheets/lagou/sidebar.css"/>
+</head>
+<body>
+    <div>
+        <ol class="breadcrumb input-lg">
+            <li><a class="active" href="javascript:void(0)" onclick="cityClick(this)">全国</a></li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">广州</a></li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">深圳</a></li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">上海</a></li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">北京</a> </li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">杭州</a> </li>
+            <li><a href="javascript:void(0)" onclick="cityClick(this)">珠海</a> </li>
+        </ol>
+    </div>
+    <div id="sidebar">
+        <div class="mainNavs">
+            <% positions.forEach( function(mainPosition,value){  %>
+            <div class="menu_box">
+                <div class="menu_main" >
+                    <h2>
+                        <%= mainPosition.name %>
+                        <span></span>
+                    </h2>
+                </div>
+                <% if(value >= (positions.length - 2)){%>
+                <div class="menu_sub dn" style="bottom:0; top: auto;">
+                <% }else{%>
+                <div class="menu_sub dn" style="top: 0px;">
+                <% }%>
+                    <% mainPosition.sub.forEach( function(sub){  %>
+                        <dl class="reset">
+                        <dt>
+                            <a><%= sub.name %></a>
+                        </dt>
+                        <dd>
+                            <% sub.position.forEach( function(position){  %>
+                            <% if(position == 'Node.js'){ %>
+                                <a href="javascript:void(0)" onclick="positionClick(this)" class="curr"><%= position %></a>
+                            <% }else{ %>
+                                <a href="javascript:void(0)" onclick="positionClick(this)" ><%= position %></a>
+                            <% } %>
+                            <% } ) %>
+                        </dd>
+                    </dl>
+                    <% } ) %>
+                </div>
+            </div>
+            <% } ) %>
+        </div>
+    </div>
+    <div class="echarts">
+        <div id="echartsCity" style="width: 700px;height:500px;"></div>
+        <div id="echartsSalary" style="width: 700px;height:500px;"></div>
+        <div id="echartsWorkYear" style="width: 700px;height:500px;"></div>
+    </div>
+    <script src="/javascripts/echarts/echarts.min.js"></script>
+    <script src="/javascripts/zepto/zepto.min.js"></script>
+    <script type="text/javascript" src="/javascripts/analysis/sidebar.js"></script>
+    <script type="text/javascript" src="/javascripts/analysis/position.js"></script>
+
+</body>
+</html>
