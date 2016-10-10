@@ -19,14 +19,14 @@ npm install
 ```
 ### 3. 抓取ip
 ```
-node getIp.js 
+node crawler/getIp.js 
 ```
 ### 4. 抓取职位信息
 ```
-node getLagouData.js
+node crawler/getLagouData.js
 ```
 ### 5. 显示抓取完成后启动Web页面
 ```
-node  bin\run
+node  bin/run
 ```
 ### 6. 浏览器访问 http://localhost:3000/
