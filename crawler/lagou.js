@@ -25,7 +25,7 @@ var ips;
 
 
 async function crawlerCity() {
-  var res = await request.get('http://www.crawler.com/lbs/getAllCitySearchLabels.json');
+  var res = await request.get('http://www.lagou.com/lbs/getAllCitySearchLabels.json');
   var citys = res.body.content.data.allCitySearchLabels;
   for(var cityLabel in citys){
     for(var value of citys[cityLabel]){
@@ -36,7 +36,7 @@ async function crawlerCity() {
 }
 
 async function crawlerPosition() {
-  var res = await request.get('http://www.crawler.com');
+  var res = await request.get('http://www.lagou.com');
   var $ = cheerio.load(res.text);
   var length = $('#sidebar .menu_box').length;
   var positions,position = {};
@@ -95,7 +95,7 @@ async function crawlerJobTotal(city,position) {
   }
   try {
     positionResult = await request
-        .post('http://www.crawler.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
+        .post('http://www.lagou.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
         .type('application/x-www-form-urlencoded')
         .send({ kd: position.name, pn: 1,first:true }).proxy(proxy).timeout(3000);
   }catch(error){
@@ -132,7 +132,7 @@ async function crawlerJobs(city,position,page) {
   if(page == 1){
     try {
       positionResult = await request
-          .post('http://www.crawler.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
+          .post('http://www.lagou.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
           .type('application/x-www-form-urlencoded')
           .send({ kd: position.name, pn: page,first:true }).proxy(proxy).timeout(3000);
     }catch(error){
@@ -163,7 +163,7 @@ async function crawlerJobs(city,position,page) {
   }else{
     try {
       positionResult = await request
-          .post('http://www.crawler.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
+          .post('http://www.lagou.com/jobs/positionAjax.json?px=new&needAddtionalResult=false&city='+city)
           .type('application/x-www-form-urlencoded')
           .send({ kd: position.name, pn: page,first:true }).proxy(proxy).timeout(3000);
     }catch(error){
